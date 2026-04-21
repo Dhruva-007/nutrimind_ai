@@ -6,7 +6,9 @@ const withPWA = require('next-pwa')({
 
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
   images: {
+    unoptimized: true,
     domains: ['firebasestorage.googleapis.com'],
   },
 };
